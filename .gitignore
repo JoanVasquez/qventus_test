@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+*.db
+*.pydevproject
+*.env
+
+# Django migrations
+**/migrations/*.py
+**/migrations/*.pyc
+**/migrations/__pycache__/
+
+# VSCode
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Environments
+.env
+.env.*
+venv/
+.venv/
+ENV/
+env.bak/
+.envrc
+
+# Unit test / coverage
+htmlcov/
+coverage.xml
+*.cover
+.cache
+.pytest_cache/
+nosetests.xml
+*.mo
+test-results/
+
+# MyPy / Flake8 / Lint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.tox/
+.flake8
+pylint.log
+
+# Docker
+*.pid
+docker-compose.override.yml
+__dockerized
+.dockerignore
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Swagger
+static/swagger/
+swagger.json
+swagger.yaml
