@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        - DEV=true
+    command: ["python", "manage.py", "test", "--settings=settings.base"]
+    environment:
+      DJANGO_SECRET_KEY: insecure-key
+      DJANGO_DEBUG: "True"
+      DJANGO_ENV: test
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - ./app:/app
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
